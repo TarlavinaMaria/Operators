@@ -6,6 +6,8 @@ using std::endl;
 
 //#define TASK1 // Викторина
 //#define TASK2 // Калькулятор
+#define TASK3 // Используя побитовыe операторы поменять местами две переменных, без использования третьей переменной
+
 
 void main()
 {
@@ -46,7 +48,6 @@ void main()
 	else
 		cout << "Итого: " << sum << " верных ответа";
 #endif
-
 #if defined TASK2
 	double number1;
 	double number2;
@@ -75,4 +76,14 @@ void main()
 		cout << "Ваш ответ: " << answer;
 	}
 #endif
+#ifdef TASK3
+	int A;
+	int	B;
+	cout << "Введите А и В: "; cin >> A >> B;
+	A = A + B;
+	B = A - B;
+	A = A - B;
+	cout << "А = " << A << endl << "B = " << B;
+#endif // TASK3
+
 }
