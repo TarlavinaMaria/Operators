@@ -77,13 +77,13 @@ void main()
 	}
 #endif
 #ifdef TASK3
-	int A;
-	int	B;
-	cout << "Введите А и В: "; cin >> A >> B;
-	A = A + B;
-	B = A - B;
-	A = A - B;
-	cout << "А = " << A << endl << "B = " << B;
+	int x;
+	int	y;
+	cout << "Введите x и y: "; cin >> x >> y;
+	x ^= y;
+	y ^= x;
+	x ^= y;
+	cout << "x = " << x << endl << "y = " << y;
 #endif // TASK3
 
 }
